@@ -13,5 +13,5 @@ public class User {
 
     private String name;
 
-    private boolean is_elite;
+    private Boolean elite;
 }
