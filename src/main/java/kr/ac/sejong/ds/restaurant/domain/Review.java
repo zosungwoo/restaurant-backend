@@ -5,20 +5,21 @@ import lombok.Getter;
 
 @Entity
 @Getter
-public class Reviews {
+public class Review {
     
     @Id @GeneratedValue
+    @Column(name = "review_id")
     private Long id;
     
     private Double rating;
 
     private String review_text;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
-    private Users users;
+    private User user;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "restaurant_id")
-    private Restaurants restaurants;
+    private Restaurant restaurant;
 }

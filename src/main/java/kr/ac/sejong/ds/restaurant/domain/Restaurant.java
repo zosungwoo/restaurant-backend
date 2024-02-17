@@ -5,10 +5,11 @@ import lombok.Getter;
 
 @Entity
 @Getter
-public class Restaurants {
+public class Restaurant {
 
     @Id
     @GeneratedValue
+    @Column(name = "restaurant_id")
     private Long id;
 
     private String name;

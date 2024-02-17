@@ -8,7 +8,7 @@ import lombok.Getter;
 
 @Entity
 @Getter
-public class Users {
+public class User {
 
     @Id @GeneratedValue
     @Column(name = "user_id")

@@ -5,15 +5,17 @@ import lombok.Getter;
 
 @Entity
 @Getter
-public class Restaurant_popula_dishes {
+@Table(name = "Restaurant_popular_dish")
+public class RestaurantPopularDish {
 
     @Id
     @GeneratedValue
+    @Column(name = "dish_id")
     private Long id;
 
     private String name;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "restaurant_id")
-    private Restaurants restaurants;
+    private Restaurant restaurant;
 }
