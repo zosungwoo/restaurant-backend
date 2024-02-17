@@ -16,7 +16,8 @@ public class Restaurant {
 
     private Long review_count;
 
-    private Double average_rating;
+    @Column(name = "average_rating")
+    private Double averageRating;
 
     private String address;
 

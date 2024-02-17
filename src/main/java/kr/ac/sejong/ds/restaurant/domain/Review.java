@@ -13,7 +13,8 @@ public class Review {
     
     private Double rating;
 
-    private String review_text;
+    @Column(name = "review_text")
+    private String reviewText;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
