@@ -3,6 +3,8 @@ package kr.ac.sejong.ds.restaurant.domain;
 import jakarta.persistence.*;
 import lombok.Getter;
 
+import java.util.List;
+
 @Entity
 @Getter
 public class Restaurant {
@@ -24,4 +26,7 @@ public class Restaurant {
     private Double lat;
 
     private Double lng;
+
+    @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL)
+    private List<RestaurantPopularDish> restaurantPopularDishes;
 }
