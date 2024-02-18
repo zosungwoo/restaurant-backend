@@ -16,8 +16,8 @@ import java.util.stream.Collectors;
 public class ReviewController {
     private final ReviewService reviewService;
 
-    @GetMapping("/api/restaurant/{restaurantId}/reviews")
-    public List<ReviewResponseDto> reviewsByRestaurant(@PathVariable("restaurantId") Long restaurantId) {
+    @GetMapping("/api/restaurants/{restaurantId}/reviews")
+    public List<ReviewResponseDto> getAllReviewByRestaurant(@PathVariable("restaurantId") Long restaurantId) {
         List<ReviewResponseDto> reviewResponseDto = reviewService.findReviewByRestaurant(restaurantId)
                 .stream().map(ReviewResponseDto::new).collect(Collectors.toList());
         return reviewResponseDto;
