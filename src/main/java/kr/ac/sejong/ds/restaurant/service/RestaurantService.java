@@ -17,4 +17,9 @@ public class RestaurantService {
     public List<Restaurant> findRestaurants(){
         return restaurantRepository.findAll();
     }
+
+    public List<Restaurant> findRestaurantsByBorough(String borough){
+        return restaurantRepository.findByAddressContaining(borough);
+    }
+
 }
