@@ -22,4 +22,7 @@ public class RestaurantService {
         return restaurantRepository.findByAddressContaining(borough);
     }
 
+    public List<Restaurant> findRestaurantsByIds(List<Long> restaurantIds){
+        return restaurantRepository.findByIdIn(restaurantIds);
+    }
 }
