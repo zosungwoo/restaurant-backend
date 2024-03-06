@@ -1,7 +1,7 @@
-package kr.ac.sejong.ds.restaurant.dto;
+package kr.ac.sejong.ds.restaurant.dto.review;
 
 import kr.ac.sejong.ds.restaurant.domain.Review;
-import kr.ac.sejong.ds.restaurant.domain.User;
+import kr.ac.sejong.ds.restaurant.dto.user.UserResponseDto;
 import lombok.Getter;
 
 @Getter

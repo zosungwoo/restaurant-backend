@@ -1,4 +1,4 @@
-package kr.ac.sejong.ds.restaurant.dto;
+package kr.ac.sejong.ds.restaurant.dto.user;
 
 import kr.ac.sejong.ds.restaurant.domain.Review;
 import kr.ac.sejong.ds.restaurant.domain.User;

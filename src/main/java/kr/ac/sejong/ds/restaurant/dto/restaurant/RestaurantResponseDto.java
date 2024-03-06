@@ -1,4 +1,4 @@
-package kr.ac.sejong.ds.restaurant.dto;
+package kr.ac.sejong.ds.restaurant.dto.restaurant;
 
 import kr.ac.sejong.ds.restaurant.domain.Restaurant;
 import lombok.Getter;
